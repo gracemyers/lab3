@@ -81,7 +81,7 @@ async function scatterplot() {
       .attr("fill", "teal")
       .on("click", function(event,d) {
         d3.select(".image")
-          .attr("src", "/img/" + d.image);
+          .attr("src", "img/" + d.image);
           d3.select(".building-name").text(d.building);
         d3.select(".height").text(d.height_ft);
         d3.select(".city").text(d.city);
